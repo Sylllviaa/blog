@@ -1,0 +1,73 @@
+// 创建plugins管理elementUI组件库中按需引入的组件
+
+import {
+    Button,
+    Select,
+    Menu,
+    MenuItem,
+    MenuItemGroup,
+    Dropdown,
+    DropdownMenu,
+    DropdownItem,
+    Avatar,
+    RadioGroup,
+    RadioButton,
+    Timeline,
+    TimelineItem,
+    Card,
+    Table,
+    TableColumn,
+    Pagination,
+    Tag,
+    Carousel,
+    CarouselItem,
+    Image,
+    Tree,
+    Input,
+    Dialog,
+    Backtop,
+    Icon,
+    Badge,
+    Form,
+    FormItem,
+    Autocomplete,
+} from 'element-ui'
+
+
+let plugins = [Button,
+    Select,
+    Menu,
+    MenuItem,
+    MenuItemGroup,
+    Dropdown,
+    DropdownMenu,
+    DropdownItem,
+    Avatar,
+    RadioGroup,
+    RadioButton,
+    Timeline,
+    TimelineItem,
+    Card,
+    Table,
+    TableColumn,
+    Pagination,
+    Tag,
+    Carousel,
+    CarouselItem,
+    Image,
+    Tree,
+    Input,
+    Dialog,
+    Backtop,
+    Icon,
+    Badge,
+    Form,
+    FormItem,
+    Autocomplete,
+]
+
+export default function getElementUI(Vue) {
+    plugins.forEach((value) => {
+        return Vue.use(value)
+    })
+}

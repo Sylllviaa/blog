@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+i {
+  font-style: normal;
+}
+.icon {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+ /deep/ .v-note-wrapper .v-note-panel .v-note-navigation-wrapper {
+  display: none;
+}
